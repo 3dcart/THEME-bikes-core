@@ -1063,6 +1063,14 @@ iframe {
 .product-item.slick-slide {
     padding: 0 15px !important;
 }
+@media(max-width:1023px){
+	.navbar-nav > li.dropdown > a:after{
+		display:none;
+	}
+	.navbar-nav > li > .dropdown-menu{
+		display:none;
+	}
+}
 @media(max-width: 767px) {
     .product-item.slick-slide {
         max-width: inherit;
