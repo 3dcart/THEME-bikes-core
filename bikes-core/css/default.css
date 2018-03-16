@@ -1083,3 +1083,8 @@ iframe {
 		max-width: 280px;
 	}
 }
+@media(min-width: 768px) {
+    .revealOnScroll {
+        opacity:0;
+    }
+}
