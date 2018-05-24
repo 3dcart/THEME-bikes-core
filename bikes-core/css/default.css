@@ -326,6 +326,7 @@ h1 {
 .site-header .searchBox {
     padding:0;
     margin: 25px 0 0 0;
+    position: relative;
 }
 
 .searchBox {
