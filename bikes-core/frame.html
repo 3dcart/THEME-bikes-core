@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="assets/templates/common-core/lib/bootstrap/css/bootstrap.css" type="text/css" />
 	<link rel="StyleSheet" href="assets/templates/common-core/css/core.css" type="text/css" />
 	[page_styles]
-	<link rel="StyleSheet" href="assets/templates/[template]/css/default.css" type="text/css" />
+	<link rel="StyleSheet" href="assets/templates/[template]/css/[stylesheet]" type="text/css" />
 	<!--END: page_styles-->
 
 </head>
@@ -284,7 +284,7 @@
                     <h4 class="modal-title" id="resetPWLabel">Store Search</h4>
                 </div>
                 <div class="modal-body">
-                    <div class="searchBox">
+                    <div id="searchBox" class="searchBox">
                         <form method="get" name="searchForm" action="search.asp">
                             <div class="search-form">
                                 <input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
@@ -341,37 +341,5 @@
         });
     </script>
     <!--END: quicksearch-->
-
-<!--START: 3dcart stats-->
-<div class="stats hidden"> 
-    <script type="text/javascript">
-        //<![CDATA[
-        var file='/stats/count.asp';
-        var stats_d=new Date();
-        var stats_s=stats_d.getSeconds();
-        var stats_m=stats_d.getMinutes();
-        var stats_x=stats_s*stats_m;
-        var prdID = '[catalogid]';
-        var catID = '[catid]';
-        stats_f='' + escape(document.referrer); stats_f=stats_f.replace('_','----');
-        if (navigator.appName=='Netscape'){stats_b='NS';}
-        if (navigator.appName=='Microsoft Internet Explorer'){stats_b='MSIE';}
-        if (navigator.appVersion.indexOf('MSIE 3')>0) {stats_b='MSIE';}
-        stats_u='' + escape(document.URL); stats_u=stats_u.replace('_','----'); stats_w=screen.width; stats_h=screen.height;
-        stats_v=navigator.appName;
-        stats_fs = window.screen.fontSmoothingEnabled;
-        if (stats_v != 'Netscape') {stats_c=screen.colorDepth;}
-        else {stats_c=screen.pixelDepth;}
-        stats_j=navigator.javaEnabled();
-        info='w=' + stats_w + '&h=' + stats_h + '&c=' + stats_c + '&r=' + stats_f + '&u='+ stats_u + '&fs=' + stats_fs + '&b=' + stats_b + '&x=' + stats_x + '&cat=' + catID + '&prd=' + prdID;
-        document.write('<img src="' + file + '?'+info+ '" width="1" height="1" border="0" alt="stats" />');
-        //]]>
-    </script>
-    <noscript>
-        <img src="/stats/count.asp" width="90" height="30" alt="" />
-    </noscript>
-</div>
-<!--END: 3dcart stats-->
-    
 </body>
 </html>

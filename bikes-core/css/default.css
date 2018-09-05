@@ -326,7 +326,6 @@ h1 {
 .site-header .searchBox {
     padding:0;
     margin: 25px 0 0 0;
-    position: relative;
 }
 
 .searchBox {
@@ -431,8 +430,6 @@ ul.extrapages li a {
 .footer-social {
     padding-top: 15px;
     padding-bottom: 15px;
-    border-top: 1px solid #2d2d2d;
-    border-bottom: 1px solid #2d2d2d;
 }
 .copyright {
     margin-top:20px;
@@ -957,8 +954,8 @@ span.freeshipping {
     top: 50%;
     right: 0;
     z-index: 999;
-    background-color: #8f9090;
-    color: #000;
+    background-color: #1b2b33;
+    color: #fff;
     border-radius: 20px 0 0 20px;
     padding: 15px;
     text-align: center;
@@ -968,7 +965,7 @@ span.freeshipping {
 
 .floating-cart a,
 .floating-cart a:hover {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 .floating-cart span.cart-icon {
