@@ -105,7 +105,7 @@
                 <div class="col-sm-3 hidden-sm hidden-xs">
                     <!--START: FRAME_SEARCH-->
                     <div id="searchBox" class="searchBox">
-                        <form method="get" name="searchForm" action="search.asp">
+                        <form method="get" name="searchForm" action="search.asp" style="position: relative;">
                             <div class="search-form">
                                 <input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
                                 <button type="submit" class="search-submit btn btn-default"><span class="icon-search"></span></button>
@@ -284,10 +284,10 @@
                     <h4 class="modal-title" id="resetPWLabel">Store Search</h4>
                 </div>
                 <div class="modal-body">
-                    <div id="searchBox" class="searchBox">
+                    <div class="searchBox">
                         <form method="get" name="searchForm" action="search.asp">
                             <div class="search-form">
-                                <input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
+                                <input type="text" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
                                 <button type="submit" class="search-submit btn btn-default btn-inverse"><span class="icon-search"></span></button>
                             </div>
                         </form>
