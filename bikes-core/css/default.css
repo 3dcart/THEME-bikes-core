@@ -14,7 +14,15 @@ body {
 footer {
 	flex-shrink: 0;
 }
-
+.product-items.productList .product-item .img img{
+	position:inherit;
+}
+@media (max-width: 991px){
+.product-items.productList .product-item .img {
+    padding-right: 0;
+    width: 32%;
+}
+}
 body {
     /*font-family: 'Open Sans', sans-serif;*/
 	font-family: 'Open Sans', sans-serif;
