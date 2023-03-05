@@ -95,6 +95,7 @@ function moveMenu() {
     if (respWidth < 767) {
         jQuery('#menulinks').appendTo('#mobile-menulinks');
         jQuery('#categories').appendTo('#mobile-categories');
+        jQuery('#mobile-menulinks .menu-acc').appendTo('#mobile-menulinks');
     }
     else {
         jQuery('#menulinks').appendTo('#menulinks-outer');

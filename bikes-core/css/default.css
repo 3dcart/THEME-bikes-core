@@ -949,6 +949,8 @@ span.freeshipping {
 .mobile-menu-widget ul li {
     margin: 0 0 10px;
 }
+
+.mobile-menu-widget div a.menu-acc,
 .mobile-menu-widget ul li a {
     padding: 0;
     line-height: 1;
@@ -958,6 +960,7 @@ span.freeshipping {
     color: #555;
     text-decoration: none !important;
 }
+.mobile-menu-widget div a:hover,
 .mobile-menu-widget ul li a:hover {
     color: #333;
 }
