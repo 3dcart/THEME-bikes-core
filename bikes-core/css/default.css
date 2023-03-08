@@ -294,17 +294,21 @@ h1 {
 }
 .top-nav ul li {
     float: left;
-    border-right: 1px solid #fff;
-    margin: 0 10px 0 0;
-    padding: 0 10px 0 0;
+    border-left: 1px solid #fff;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 10px;
 }
 .top-nav .useraccount ul {
     float: right;
 }
-    .top-nav .useraccount ul li {
-        border: none;
-    }
-
+.top-nav .useraccount ul li {
+    border: none;
+}
+.top-nav ul li:first-child {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
 .top-nav ul li:last-child {
     border: none;
     margin: 0;
