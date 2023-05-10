@@ -1,7 +1,7 @@
 /*
 ** Bootstrap over-rides
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 body {
 	display: flex;
 	height: 100%;
@@ -10,6 +10,11 @@ body {
 }
 .page-content {
 	flex: 1 0 auto;
+}
+@media (max-width: 767px) {
+	.antiCls-xs { 
+		visibility: hidden; 
+	}
 }
 footer {
 	flex-shrink: 0;
@@ -521,7 +526,7 @@ ul.extrapages li a {
     background-color: #fff;
     border-color: #fff;
     max-width: 100%;
-    color: #afafaf;
+    color: #000;
     float: left;
 }
 .mailinglist-submit {
@@ -787,7 +792,7 @@ span.freeshipping {
 .extrapages-shower a {
     display: block;
     background-color: #ff6e56;
-    color: #fff;
+    color: #000;
     padding: 10px 18px;
     text-decoration: none !important;
 }

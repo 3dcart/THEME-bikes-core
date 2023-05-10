@@ -7,16 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
     [META]
 
-    <!--START: FRAME_RSSFEEDS -->
+    <!--START: FRAME_RSSFEEDS-->
     <link rel="alternate" type="application/rss+xml" title="Featured Items (RSS 2.0)" href="[store_url]/rss.asp?type=home" />
     <link rel="alternate" type="application/rss+xml" title="Products On Sale (RSS 2.0)" href="[store_url]/rss.asp?type=onsale" />
     <link rel="alternate" type="application/rss+xml" title="New Releases (RSS 2.0)" href="[store_url]/rss.asp?type=newreleases" />
     <link rel="alternate" type="application/rss+xml" title="Best Sellers (RSS 2.0)" href="[store_url]/rss.asp?type=bestsellers" />
     <link rel="alternate" type="application/rss+xml" title="Latest Blog Posts (RSS 2.0)" href="[store_url]/rss.asp?type=blog" />
-    <!--END: FRAME_RSSFEEDS -->
+    <!--END: FRAME_RSSFEEDS-->
 
 	<!--START: page_styles-->
-    <link rel="preload stylesheet" href="assets/templates/common-core/css/core.css" type="text/css" as="style" />
     <link
         rel="preload stylesheet"
         href="assets/templates/common-core/lib/bootstrap/css/bootstrap.css"
@@ -30,33 +29,7 @@
             type="text/css"
         />
     </noscript>
-    <link
-        rel="preload stylesheet"
-        href="assets/templates/common-core/lib/fontello/css/fontello.min.css"
-        as="style"
-        onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-        <link
-            href="assets/templates/common-core/lib/fontello/css/fontello.min.css"
-            rel="stylesheet"
-            type="text/css"
-        />
-    </noscript>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        rel="preload stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-        as="style"
-        onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-            rel="stylesheet"
-            type="text/css"
-        />
-    </noscript>
+    <link rel="preload stylesheet" href="assets/templates/common-core/css/core.css" type="text/css" as="style" />
     [page_styles]
     <link
         rel="preload stylesheet"
@@ -75,7 +48,11 @@
 
 </head>
 <body class="[body_class]" data-currency="[currency_symbol]" data-decimal="[decimal_places]">
-	<div id="skip"><a href="#navbar">Skip to Main Content</a></div>
+    <div id="skip">
+        <a href="#site-header">Skip to Header</a>
+        <a href="#page-content">Skip to Main Content</a>
+        <a href="#site-footer">Skip to Footer</a>
+    </div>
     <section class="top-nav hidden-xs">
         <div class="container">
             <div class="row">
@@ -110,7 +87,7 @@
         </div>
     </section>
 
-    <header class="site-header">
+    <header class="site-header" id="site-header">
         <div class="container">
             <div class="row">
                 <div class="col-xs-3 visible-xs text-left head-mobile-nav">
@@ -201,12 +178,14 @@
     </header>
 
     <!--Get current page template-->
+    <div id="page-content">
     [page_content]
+    </div>
     <!--/Get current page template-->
 
 
     <!-- FOOTER -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="site-footer">
         <div class="container">
 
             <div class="row">
@@ -350,15 +329,39 @@
         </div>
     </div>
 
-	<link rel="StyleSheet" href="assets/templates/common-core/lib/fontello/css/animation.css" type="text/css" />
-    <link rel="stylesheet" href="/assets/templates/common-core/lib/animate-me/animate.css" type="text/css" media="screen" />
+	<link
+        rel="preload stylesheet"
+        href="assets/templates/common-core/lib/fontello/css/fontello.min.css"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+        <link
+            href="assets/templates/common-core/lib/fontello/css/fontello.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </noscript>
+    <link
+        rel="preload stylesheet"
+        href="assets/templates/common-core/lib/fontello/css/animation.css"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+        <link
+            href="assets/templates/common-core/lib/fontello/css/animation.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </noscript>
 
 	<!--START: page_scripts-->
     <script src="assets/templates/common-core/lib/jquery.min.js"></script>
-    <script src="assets/templates/common-core/lib/jquery-migrate-3.0.1.min.js"></script>
-    <script src="assets/templates/common-core/lib/bootstrap/js/bootstrap.js"></script>
-	<script src="assets/templates/common-core/js/core.js"></script>
-	<script src="assets/templates/[template]/js/main.js"></script>
+    <script src="assets/templates/common-core/lib/jquery-migrate-3.0.1.min.js" defer="defer"></script>
+    <script src="assets/templates/common-core/lib/bootstrap/js/bootstrap.js" defer="defer"></script>
+	<script src="assets/templates/common-core/js/core.js" defer="defer"></script>
+	<script src="assets/templates/[template]/js/main.js" defer="defer"></script>
     <script>
         $(document).ready(function () {
 
